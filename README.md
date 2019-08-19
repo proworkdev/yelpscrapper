@@ -17,12 +17,30 @@ UnicodeCSV for handling Unicode characters in the output file. Install it using 
 Install Django
 
 
-# Setup the project
+# Steps to install YelpScrapper
+
+sudo apt-get update
+
+sudo apt-get upgrade python3
+
+sudo apt-get install python3
+
+sudo apt-get install python3-pip
+
+sudo pip install virtualenv
+
+virtualenv -p python3 env
+
+source env/bin/activate
+
+pip install unicodecsv
+
+sudo pip3 install django
 
 Clone the repository
 
 cd yelpscrapper
 
-Run command - python manage.py runserver 
+python3 manage.py runserver 
 
 
