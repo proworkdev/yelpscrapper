@@ -1,0 +1,28 @@
+{% load static %}
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
+    <script src="{% static 'jquery.min.js' %}"></script>
+    <script src="{% static 'bootstrap.min.js' %}"></script>
+    <link href="{% static 'style.css' %}" rel="stylesheet">
+</head>
+<!------ Include the above in your HEAD tag ---------->
+
+<body>
+        <div class="container">
+                <div class="row">
+                <div class="col-12"><h2>Enter Place and SearchQuery for Yelp scrapper</h2></div>
+                <div class="col-12">
+                <div id="custom-search-input">
+                <form action="yelp" method="POST">
+                    {% csrf_token %} 
+                    <input type="text" name="place" placeholder="Place" />
+                    <input type="text" name="searchquery" placeholder="Search-query" />
+                    <input type="submit">
+                
+                </form>
+                </div>
+                </div>
+                </div>
+        </div>
+</body>
